@@ -33,12 +33,29 @@ namespace datewhen
             //12 hours difference
             DateTime fiirstdate = new DateTime(2022, 3, 26, 12, 0, 0);
             DateTime seconddate = new DateTime(2022, 3, 27, 12, 0, 0);
-            TimeSpan differencebetweentwo = fiirstdate - seconddate;
+            TimeSpan differencebetweentwo = seconddate - fiirstdate;
             Console.WriteLine(differencebetweentwo.TotalHours);
             //klocka omstellning?
 
             //dagar or smth
+            DateTime whatever = new DateTime(2023, 1, 1, 0, 0, 0);
+            DateTime whatever2 = new DateTime(2024, 1, 1, 0, 0, 0);
+            TimeSpan whatever3 = whatever2 - whatever;
+            Console.WriteLine(whatever3.TotalDays);
 
+            //dagar or smth part 2
+            DateTime okay = new DateTime(2024, 1, 1, 0, 0, 0);
+            DateTime imdone = new DateTime(2025, 1, 1, 0, 0, 0);
+            TimeSpan again = imdone - okay;
+            Console.WriteLine(again.TotalDays);
+            //skottor
+
+            // sekunder
+            DateTime sparklyqueen = new DateTime(2015, 7, 1, 13, 59, 30);
+            DateTime shineyunicorn = new DateTime(2015, 7, 1, 14, 0, 30);
+            TimeSpan rainboweatingbears = shineyunicorn - sparklyqueen;
+            Console.WriteLine(rainboweatingbears.TotalSeconds);
+            //det blev fel i think... leap second?
         }
        
     }
